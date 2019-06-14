@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "AllProduct";
+    Layout = "~/Areas/GlassesAdmin/Views/Shared/_Layout.cshtml";
+    List<User> ProductList = ViewBag.ProductList;
+   
+}
+    <h1>List User</h1>
+<div class="content mt-3">
+    <div class="animated fadeIn">
+        <div class="row">
+            
+            <div class="card-header col-sm-11">
+                <form class="form-inline my-2 my-lg-0 ">
+                    <input class="form-control mr-sm-2 col-sm-4" type="text" placeholder="Tên người dùng">
+                    <button type="button" class="btn btn-dark" class="col-sm-4">Tìm kiếm</button>
+                </form>
+            </div>
+
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table id="mytable" class="table table-bordred table-striped">
+
+                        <thead>
+                        <th>User Name</th>
+                        <th>Email</th>
+                        <th>Date of Birth</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>View</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nguyễn Thị Hường</td>
+                                <td>huong2711@gmail.com</td>
+                                <td>27/11/1998</td>
+                                <td>097382910</td>
+                                <td>Hải Dương</td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="View"><a href=""<button class="btn btn-primary btn-xs" data-title="View" data-toggle="modal" data-target="#view"><span class="fas fa-eye"></span></button></a></p></td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Edit"><a href=""><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fa fa-edit"></span></button></a></p></td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><a href=""><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><i class="fa fa-trash" aria-hidden="true"></i></button></a></p></td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Nguyễn Thị Minh</td>
+                                <td>minh2511@gmail.com</td>
+                                <td>25/11/1998</td>
+                                <td>09587932</td>
+                                <td>Nam Định </td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="View"><a href=""<button class="btn btn-primary btn-xs" data-title="View" data-toggle="modal" data-target="#view"><span class="fas fa-eye"></span></button></a></p></td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Edit"><a href=""><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fa fa-edit"></span></button></a></p></td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><a href=""><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><i class="fa fa-trash" aria-hidden="true"></i></button></a></p></td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div><!-- .animated -->
+</div>
+

@@ -1,0 +1,100 @@
+﻿@{
+    Layout = "~/Areas/GlassesAdmin/Views/Shared/_Layout.cshtml";
+}
+@model Model.EF.Product
+<div class="col-lg-12">
+    <div class="card">
+        <form action="/GlassesAdmin/AdminProduct/EditProduct" method="post" enctype="multipart/form-data" class="form-horizontal">
+            <div class="card-header">
+                <h1>Edit Product</h1>
+                <input type="text" value="@Model.ID_Product" name="ID_Product" style="display:none;" />
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Name </label></div>
+                    <div class="col-12 col-md-7"><input type="text" id="text-input" name="Name" placeholder="Tên Sản Phẩm" class="form-control" value="@Model.Name"></div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Description</label></div>
+                    <div class="col-12 col-md-7"><input type="text" id="text-input" name="Description" placeholder="Mô tả sản phẩm " class="form-control" value=" @Model.Description"></div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="selectLg" class=" form-control-label">List Product</label></div>
+                    <div class="col-12 col-md-4">
+                        <select name="ID_Category" id="selectLg" class="form-control">
+                            @{
+                                if (Model.ID_Category == 1)
+                                {
+                                    <option value="1" selected>Kính Thời Trang Nam</option>
+                                    <option value="2">Kính Thời Trang Nữ</option>
+                                    <option value="3">Kính Cận</option>
+                                }
+                                if (Model.ID_Category == 2)
+                                {
+                                    <option value="1">Kính Thời Trang Nam</option>
+                                    <option value="2" selected>Kính Thời Trang Nữ</option>
+                                    <option value="3">Kính Cận</option>
+                                }
+                                if (Model.ID_Category == 3)
+                                {
+                                    <option value="1">Kính Thời Trang Nam</option>
+                                    <option value="2">Kính Thời Trang Nữ</option>
+                                    <option value="3" selected>Kính Cận</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Price</label></div>
+                    <div class="col-12 col-md-4"><input type="text" id="text-input" name="price" placeholder="150.000" class="form-control" value="@Model.price"></div>
+                    <div class="col-md-3">VNĐ</div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Sale</label></div>
+                    <div class="col-12 col-md-4"><input type="text" id="text-input" name="discount" placeholder="100.000" class="form-control" value="@Model.discount"></div>
+                    <div class="col-md-3">VNĐ</div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Color</label></div>
+                    <div class="col-12 col-md-4">
+                        <input type="text" id="text-input" name="Color" placeholder="Đen" class="form-control" value="@Model.Color">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Quantity</label></div>
+                    <div class="col-12 col-md-4">
+                        <input type="text" id="text-input" name="Quantity" placeholder="10" class="form-control" value="@Model.Quantity">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Description</label></div>
+                    <div class="col-12 col-md-4">
+                        <input type="text" id="text-input" name="Description" placeholder="Nhập mô tả" class="form-control" value="@Model.Description">
+                    </div>
+                </div>
+
+            </div>
+            <div class="page-header">
+                <a>Images</a><br />
+                <img class="img-thumbnail" src=" /Assets/Client/images/@Model.imageLink" alt="">
+            </div>
+            @*<input type="file" class="form-control-file" id="image">*@
+            <input type="file" name="uploadFile" />
+
+        </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary btn-sm">
+                    <i class="fa fa-dot-circle-o"></i> Edit Product
+                </button>
+                <button type="reset" class="btn btn-danger btn-sm">
+                    <i class="fa fa-ban"></i> Reset
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/Assets/Client/images/icons/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="/Assets/Client/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/Client/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/Client/fonts/themify/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/Client/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/Client/fonts/elegant-font/html-css/style.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/Client/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/Client/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/Client/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/Client/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/Client/vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/Client/vendor/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/Client/vendor/lightbox2/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/Client/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/Client/css/main.css">
+</head>
+<body class="animsition">
+    <header class="header1">
+        @{ Html.RenderAction("Category", "Home");}
+    </header>
+
+    @RenderBody()
+    <!-- Footer -->
+    <footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
+        <div class="flex-w p-b-90">
+            <div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
+                <h4 class="s-text12 p-b-30">
+                    GET IN TOUCH
+                </h4>
+
+                <div>
+                    <p class="s-text7 w-size27">
+                        Any questions? Let us know in store at 12 Đang-Thuy-Tram, Cau-Giay, Ha-Noi, call us on (+84)0333244848
+                    </p>
+
+                    <div class="flex-m p-t-30">
+                        <a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
+                        <a href="#" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
+                        <a href="#" class="fs-18 color1 p-r-20 fa fa-pinterest-p"></a>
+                        <a href="#" class="fs-18 color1 p-r-20 fa fa-snapchat-ghost"></a>
+                        <a href="#" class="fs-18 color1 p-r-20 fa fa-youtube-play"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
+                <h4 class="s-text12 p-b-30">
+                    Categories
+                </h4>
+
+                <ul>
+                    <li class="p-b-9">
+                        <a href="#" class="s-text7">
+                            Mắt kính thời trang nam
+                        </a>
+                    </li>
+
+                    <li class="p-b-9">
+                        <a href="#" class="s-text7">
+                            Mắt kính thời trang nữ
+                        </a>
+                    </li>
+
+                    <li class="p-b-9">
+                        <a href="#" class="s-text7">
+                            Mắt kính cận
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
+                <h4 class="s-text12 p-b-30">
+                    Links
+                </h4>
+
+                <ul>
+                    <li class="p-b-9">
+                        <a href="#" class="s-text7">
+                            Search
+                        </a>
+                    </li>
+
+                    <li class="p-b-9">
+                        <a href="#" class="s-text7">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li class="p-b-9">
+                        <a href="#" class="s-text7">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li class="p-b-9">
+                        <a href="#" class="s-text7">
+                            Returns
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
+                <h4 class="s-text12 p-b-30">
+                    Help
+                </h4>
+
+                <ul>
+                    <li class="p-b-9">
+                        <a href="#" class="s-text7">
+                            Track Order
+                        </a>
+                    </li>
+
+                    <li class="p-b-9">
+                        <a href="#" class="s-text7">
+                            Returns
+                        </a>
+                    </li>
+
+                    <li class="p-b-9">
+                        <a href="#" class="s-text7">
+                            Shipping
+                        </a>
+                    </li>
+
+                    <li class="p-b-9">
+                        <a href="#" class="s-text7">
+                            FAQs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="btn-back-to-top bg0-hov" id="myBtn">
+        <span class="symbol-btn-back-to-top">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </span>
+    </div>
+    <div id="dropDownSelect1"></div>
+    <div id="dropDownSelect2"></div>
+    <script type="text/javascript" src="/Assets/Client/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/Assets/Client/vendor/animsition/js/animsition.min.js"></script>
+    <script type="text/javascript" src="/Assets/Client/vendor/bootstrap/js/popper.js"></script>
+    <script type="text/javascript" src="/Assets/Client/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Assets/Client/vendor/select2/select2.min.js"></script>
+    <script type="text/javascript" src="/Assets/Client/vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/Assets/Client/js/slick-custom.js"></script>
+    <script type="text/javascript" src="/Assets/Client/vendor/countdowntime/countdowntime.js"></script>
+    <script type="text/javascript" src="/Assets/Client/vendor/lightbox2/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="/Assets/Client/vendor/sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript" src="/Assets/Client/vendor/daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="/Assets/Client/vendor/noui/nouislider.min.js"></script>
+    <script type="text/javascript" src="/Assets/Client/js/main.js"></script>
+    <script type="text/javascript">
+        $(".selection-1").select2({
+            minimumResultsForSearch: 20,
+            dropdownParent: $('#dropDownSelect1')
+        });
+
+        $(".selection-2").select2({
+            minimumResultsForSearch: 20,
+            dropdownParent: $('#dropDownSelect2')
+        });
+    </script>
+    <script type="text/javascript">
+        $('.block2-btn-addcart').each(function () {
+            var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+            $(this).on('click', function () {
+                swal(nameProduct, "is added to cart !", "success");
+            });
+        });
+        $('.block2-btn-addwishlist').each(function () {
+            var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+            $(this).on('click', function () {
+                swal(nameProduct, "is added to wishlist !", "success");
+            });
+        });
+    </script>
+    <script src="~/Assets/MilkJs/JsController.js"></script>
+    <script src="~/Assets/MilkJs/JsNotify.js"></script>
+    <script src="~/Assets/MilkJs/JsAddress.js"></script>
+    <script src="~/Assets/MilkJs/Notify/bootstrap-notify.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            "use strict";
+            function deleteBook(id) {
+                pData = { ID_Product: id };
+                request.put("POST", "/GlassesAdmin/AdminProduct/DeleteProduct", pData, function (Response) {
+                    if (Response.status == true) {
+                        notify.call_delete_1("Xóa sách thành công", "/GlassesAdmin/AdminProduct/ListProduct");
+                    }
+                    else {
+                        notify.call_delete_1("Xóa sách thất bại! Sách hiện có người mượn", "/GlassesAdmin/AdminProduct/ListProduct");
+                    }
+                    setTimeout(function () {
+                        window.location.href = "/GlassesAdmin/AdminProduct/ListProduct";
+                    }, 6000);
+                }, function () { }, function () { });
+            }
+        }
+    </script>
+</body>
+</html>
